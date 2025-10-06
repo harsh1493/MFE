@@ -1,13 +1,19 @@
 import React from "react";
-import MarketingApp from "./components/MarketingApp";
+import { BrowserRouter } from "react-router-dom";
+import MarketingApp from "./components/marketingApp";
+import Header from './components/Header';
 // export default ()=>{
 //     return <h1>Helllo from Container</h1>;
 // }
 
 export default ()=>{
  
-    return <>
-    <h1>Helllo from Container !!</h1>
+    return (
+     <BrowserRouter>
+    <div>
+        <Header />  
        <MarketingApp/>; 
-    </>;
+    </div>
+    </BrowserRouter>
+    );
 }
